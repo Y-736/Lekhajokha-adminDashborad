@@ -17,7 +17,7 @@ export default function Dashboard() {
           return;
         }
 
-        const { data } = await axios.get('http://localhost:5000/api/admin/dashboard', {
+        const { data } = await axios.get('https://lekhajokha-81cramji6-y-736s-projects.vercel.app/api/admin/dashboard', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

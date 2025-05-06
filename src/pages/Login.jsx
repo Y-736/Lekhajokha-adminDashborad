@@ -15,7 +15,7 @@ export default function Login({ setIsLoggedIn }) {
     setError('');
 
     try {
-      const { data } = await axios.post('http://localhost:5000/api/admin/login', {
+      const { data } = await axios.post('https://lekhajokha-81cramji6-y-736s-projects.vercel.app/api/admin/login', {
         email,
         password
       });

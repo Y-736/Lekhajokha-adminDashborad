@@ -26,7 +26,7 @@ export default function AllRetailers() {
       setLoading(true);
       setError('');
 
-      const response = await axios.get('http://localhost:5000/api/admin/retailers', {
+      const response = await axios.get('https://lekhajokha-81cramji6-y-736s-projects.vercel.app/api/admin/retailers', {
         params: {
           page,
           limit: pagination.limit

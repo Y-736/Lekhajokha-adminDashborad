@@ -32,7 +32,7 @@ export default function PendingRetailers() {
       setError('');
       
       const response = await axios.get(
-        'http://localhost:5000/api/admin/retailers/pending', 
+        'https://lekhajokha-81cramji6-y-736s-projects.vercel.app/api/admin/retailers/pending', 
         {
           params: {
             page: pagination.page,
@@ -83,7 +83,7 @@ export default function PendingRetailers() {
     try {
       const token = localStorage.getItem('adminToken');
       const response = await axios.put(
-        `http://localhost:5000/api/admin/retailers/${selectedRetailer.id}/status`,
+        `https://lekhajokha-81cramji6-y-736s-projects.vercel.app/api/admin/retailers/${selectedRetailer.id}/status`,
         { status, adminNotes: notes },
         {
           headers: {
